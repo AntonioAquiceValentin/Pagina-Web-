@@ -1,0 +1,166 @@
+:root {
+    font-size: 2em;
+    font-family: 'Roboto Slab', serif;
+    background: rgb(8, 9, 10);
+}
+
+/*Barra de busqueda*/
+.body {
+    margin: initial;
+}
+
+.header {
+    position: relative;
+    z-index: 50;
+    top: 0;
+    width: 100%;
+    background: rgb(107, 26, 26);
+    box-shadow: 0 0 20px 2px;
+    display: grid;
+    justify-content: center;
+}
+
+.logo {
+    /* text-align: center; */
+    color: rgb(244, 247, 245);
+    align-items: baseline;
+    
+}
+
+.container {
+    padding: 16px 16px;
+    margin:  0 auto;
+    text-align: center;
+}
+
+/* .barra-de-busqueda {
+    display: ;
+} */
+
+.lista-header {
+    font-family: 'Roboto Slab', serif;
+    font-size: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carrito-container {
+    gap: 8px;
+}
+
+.bi{
+    width: 90px;
+    height: 80px;
+}
+
+.bi-person-fill, .bi-cart, .bi-whatsapp {
+    width: 100%;
+    color: rgb(244, 247, 245);
+}
+
+/* Informacion de la comida */
+.section-information {
+    font-size: 45px;
+    margin: 10px;
+    position: relative;
+}
+
+.div-information {
+    left: 120px;
+    width: 180vh;
+    height: 50vh;
+    background: rgb(61, 61, 72);
+}
+
+.display-information {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.text {
+    margin: 0 auto;
+    padding: 5px;
+    text-align: justify;
+}
+
+.img--partes_de_res {
+    height: 200px;
+}
+
+/* Titulo e imagen de los cortes */
+.main {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.contenedor-titulo {
+    margin: 0 auto;
+    padding: 20px;
+    height: 100px;
+    width: 200px;
+}
+
+
+.div-titulo {
+    font-family: 'Roboto Slab', serif;
+    width: 500px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+}
+
+.titulo {
+    font-size: 200px;
+    text-align: center;
+    margin: auto;
+    color: #ffffff;
+}
+
+.contenedor-img {
+    border: 100px;
+    display: grid;
+    grid-row: 1fr;
+    place-items: center;
+    margin: 100px;
+    /* width: 100%; */
+}
+
+.div-img {
+    width: 100vw;
+    z-index: 200;
+    /* max-width: 2100px; */
+    /* background: rgb(87, 90, 94); */
+}
+
+.lista-imagenes {
+    margin: 20px;
+    display: inline-block;
+    border: 120px;
+}
+
+.img--cortes {
+    width: 30vw;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px .5px #ffffff;
+    /* max-width: 100%; */
+}
+
+.div-img:hover > div{
+    color: rgb(61, 61, 72);
+}
+
+/* Medio de comunicación */
+.whatsapp{
+    display: flex;
+    padding-left: 100%;
+    padding-top: 100%;
+}
+
+/* Footer */
+
+.pie_de_pagina {
+    color: rgb(244, 247, 245);
+}

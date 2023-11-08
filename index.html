@@ -1,114 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Restaurant Palco</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="tenedor.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./img/tenedor.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-    <div class="">
-        <header class="div-titulo">
-            <h1 class="div-h1">Palco</h1>
-            <img src="tenedor.jpeg" id="portada" alt="">
-            <form action="/formulario" method="POST">
-                <input type="text" id="buscador" placeholder="¿Qué se te antoja comer?">
-                <button type="submit">Buscar</button>
-            </form>
-        </header>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <p><b>Oferta</b></p>
+
+<body class="body">
+    <!--barra de busqueda-->
+    <header class="header">
+        <a class="logo" href="index.html">Palco</a>
+
+        <ul class="container barra-de-busqueda">
+            <li class="lista-header" >
+                <a href="#">Delivery</a>
+            </li>
+            <li class="lista-header" >
+                <a href="#">Reservar</a>
+            </li>
+            <li class="lista-header" >
+                <a href="#">Menú</a>
+            </li>
+            <li class="lista-header" >
+                <a href="#">Locales</a>
+            </li>
+        </ul>
+
+        <ul class="carrito-container">
+            <a href="#">
+                <i class="bi bi-person-fill"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-cart"></i>
+            </a>
+        </ul>
+    </header>
+
+    <main class="main">
+        <!--breve informacion de la comida y carne-->
+        <section class="section-information">
+            <div class="div-information display-information">
+                <h1>Maestros de la carne</h1>
+                <p class="text">Los mejores cortes de carne de carne estan aqui, con carne de res de la mejor calidad sumado de la mejor preparacion <br>
+                    Somos un Restaurant reconocido por nuestra sazón y atención.</p>
+                <img class="img--partes_de_res" src="./img/tipos-de-corte.jpg" alt="partes del res">
+            </div>
+        </section>
+
+        <!--Cortes de carne de res-->
+        <div class="contenedor-titulo">
+            <div class="div-titulo">
+                <h2 class="titulo">Los mejores cortes</h2>
+            </div>
         </div>
-        <div class="swiper-slide">
-            <img src="combo alitas burguer.jpg" alt="">
-            <p class="letter-img">COMBO ALITAS BURGUER</p>
-                <ul class="letter-contenido">
-                    <li>4 piezas de alitas con bbq</li>
-                    <li>1 hamburguesa de carne con queso chedar y salsa buffalo</li>
-                    <li>1 porcion personal de papas fritas</li>
-                </ul>
-                <p>Precio S/30</p>
-        </div>
-        <div class="swiper-slide">
-            <img src="saltado a lo pobre.jpg" alt="">
-            <p class="letter-img">SALTADO A LO POBRE</p>
-                <ul class="letter-contenido">
-                    <li>Saltado a lo pobre</li>
-                    <li>Ensalada criolla</li>
-                </ul>
-            <p>Precio S/24</p>
-        </div>
-    </div>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <p><b>Entrada</b></p>
-        </div>
-        <div class="swiper-slide">
-            <img src="papa rellena.jpg" alt="">
-            <p class="letter-img">PAPA RELLENA</p>
-                <ul class="letter-contenido">
-                    <li>papa rellena con relleno de carne</li>
-                    <li>ensalada criolla</li>
-                </ul>
-                <p>Precio S/15</p>
-        </div>
-        <div class="swiper-slide">
-            <img src="arroz con pollo.jpg" alt="">
-            <p class="letter-img">ARROZ CON POLLO</p>
-                <ul class="letter-contenido">
-                    <li>arroz con pollo</li>
-                    <li>gaseosa personal</li>
-                </ul>
-                <p>Precio S/22</p>
-        </div>
-        <div class="swiper-slide">
-            <img src="Locro.jpeg" class="change" alt="">
-            <p class="letter-img">LOCRO</p>
-                <ul class="letter-contenido">
-                    <li>locro con choclo</li>
-                    <li>gaseosa personal</li>
-                </ul>
-                <p> Precio S/20</p>
-        </div>
-    </div>
-    <div lass="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <p><b>Ensalada</b></p>
-        </div>
-        <div class="swiper-slide">
-        <img src="ensalada griega.jpg" alt="">
-            <p class="letter-img">ENSALADA GRIEGA</p>
-                <ul class="letter-contenido">
-                    <li>Ensalada griega</li>
-                </ul>
-                <p>Precio S/25</p>
-        </div>
-        <div class="swiper-slide">
-            <img src="ensalada rusa.jpg" alt="">
-            <p class="letter-img">ENSALADA RUSA</p>
-                <ul class="letter-contenido">
-                    <li>Precio S/20</li>
-                </ul>
-        </div>
-        <div class="swiper-slide">
-            <img src="ensalada de brocoli.jpg" alt="">
-            <p class="letter-img">ENSALADA DE BROCOLI</p>
-                <ul class="letter-contenido">
-                    <li>Precio S/25</li>
-                </ul>
-        </div>
-    </div>
-    <hr>
-    <div>
-        <footer class="pie_de_pagina">
-            <p>Acerca de nosotros</p>
-            <p>Restaurantes</p>
-            <p>Delivery Telefonico <br>
-            505-1111</p>
-        </footer>
-    </div>
+        <nav class="contenedor-img">
+            <div class="div-img">
+                <li class="lista-imagenes">
+                    <a class="img--cortes" href="./img/cortes/corte new-york.webp"></a>  
+                </li>
+                <li class="lista-imagenes">
+                    <a class="img--cortes" href="./img/cortes/corte-picanha.jpg"></a>
+                </li>
+                <li class="lista-imagenes">
+                    <a class="img--cortes" href="./img/cortes/corte-rib_eye.jpeg"></a>
+                </li>
+                <li class="lista-imagenes">
+                    <a class="img--cortes" href="./img/cortes/corte-top_sirloin.jpg"></a>
+                </li>
+                <li class="lista-imagenes">
+                    <a class="img--cortes" href="./img/cortes/corte_cowboy.webp"></a>
+                </li>
+            </div>
+        </nav>
+    </main>
+    <aside>
+        <nav class="whatsapp">
+            <a href="https://wa.me/+51933028937?text=Hola%20deseo%20ordenar.." target="_blank"><i class="bi bi-whatsapp"></i></a> 
+        </nav>
+    </aside>
+    <footer class="pie_de_pagina">
+        <section>
+            <div>
+                <p class="footer">Acerca de nosotros</p>
+            </div>
+            <div>
+                <input type="text">
+            </div>
+        </section>
+    </footer>
 </body>
+
 </html>
