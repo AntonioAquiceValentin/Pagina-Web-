@@ -1,60 +1,98 @@
 :root {
-    font-family: 'Roboto Slab', serif;
-    background: rgb(8, 9, 10);
+    background-color: #0b090a;
 }
 
 /*Barra de busqueda*/
 .body {
     margin: initial;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
 }
 
 .header {
     position: fixed;
-    top: 0;
     z-index: 30;
+    top: 0;
     width: 100%;
     background: rgb(107, 26, 26);
-    box-shadow: 0 0 20px 2px;
+    box-shadow: 0 0 4px 2px white;
 }
 
-.logo {
-    /* text-align: center; */
-    color: rgb(244, 247, 245);
-    align-items: baseline;
-    
+.nav {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.container {
+    display: flex;
+    max-width: 1024px;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin: 0 auto;
+}
+
+.align-s {
+    align-items: flex-start;
 }
 
 .lista {
-    padding: 16px 16px;
-    margin:  0 auto;
-    text-align: center;
+    margin: 2rem;
+    padding: initial;
     list-style: none;
+    font-size: 40px;
 }
 
-/* barra-de-busqueda */
-
-.lista-header {
-    font-family: 'Roboto Slab', serif;
-    font-size: 80px;
+.flexbox {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.carrito-container {
-    gap: 8px;
+.flexbox-centered {
+    align-items: center;
+    justify-content: space-around;
 }
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.g-8px {
+    gap: 50px;
+}
+
+
+.link {
+    color: inherit;
+    text-decoration: initial;
+    font-weight: 700;
+    transition: color 0.35s;
+    
+    &:hover {
+        color: #b1a7a6;
+    }
+}
+
+@media (width >=768px) {
+    .md\:d-flex {
+        display: flex;
+    }
+}
+/* barra-de-busqueda */
 
 .bi{
     width: 90px;
     height: 80px;
 }
 
-.bi-person-fill, .bi-cart, .bi-whatsapp {
+.bi-person-fill,
+.bi-cart,
+.bi-whatsapp {
     width: 100%;
     color: rgb(244, 247, 245);
 }
-
 
 .main {
     font-size: 25px;
