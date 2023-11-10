@@ -1,5 +1,4 @@
 :root {
-    font-size: 2em;
     font-family: 'Roboto Slab', serif;
     background: rgb(8, 9, 10);
 }
@@ -10,14 +9,12 @@
 }
 
 .header {
-    position: relative;
-    z-index: 50;
+    position: fixed;
     top: 0;
+    z-index: 30;
     width: 100%;
     background: rgb(107, 26, 26);
     box-shadow: 0 0 20px 2px;
-    display: grid;
-    justify-content: center;
 }
 
 .logo {
@@ -27,15 +24,14 @@
     
 }
 
-.container {
+.lista {
     padding: 16px 16px;
     margin:  0 auto;
     text-align: center;
+    list-style: none;
 }
 
-/* .barra-de-busqueda {
-    display: ;
-} */
+/* barra-de-busqueda */
 
 .lista-header {
     font-family: 'Roboto Slab', serif;
@@ -59,7 +55,13 @@
     color: rgb(244, 247, 245);
 }
 
-/* Informacion de la comida */
+
+.main {
+    font-size: 25px;
+    margin: 10px;
+}
+
+/* breve informacion de la comida y carne */
 .section-information {
     font-size: 45px;
     margin: 10px;
@@ -71,6 +73,7 @@
     width: 180vh;
     height: 50vh;
     background: rgb(61, 61, 72);
+    position: relative;
 }
 
 .display-information {
@@ -89,19 +92,13 @@
     height: 200px;
 }
 
-/* Titulo e imagen de los cortes */
-.main {
-    font-size: 25px;
-    margin: 10px;
-}
-
+/* Cortes de carne de res */
 .contenedor-titulo {
     margin: 0 auto;
     padding: 20px;
-    height: 100px;
+    height: 100px;  
     width: 200px;
 }
-
 
 .div-titulo {
     font-family: 'Roboto Slab', serif;
@@ -134,19 +131,19 @@
     /* background: rgb(87, 90, 94); */
 }
 
-.lista-imagenes {
+.list-imagenes {
     margin: 20px;
     display: inline-block;
     border: 120px;
 }
 
-.img--cortes {
+/* .img--cortes {
     width: 30vw;
     margin: 10px;
     border-radius: 20px;
     box-shadow: 10px 10px 20px .5px #ffffff;
-    /* max-width: 100%; */
-}
+    max-width: 100%;
+} */
 
 .div-img:hover > div{
     color: rgb(61, 61, 72);
