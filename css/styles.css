@@ -1,11 +1,11 @@
 :root {
-    background-color: #0b090a;
+    background: #CDD0D0;
 }
 
 /*Barra de busqueda*/
 .body {
     margin: initial;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Josefin Slab', serif;
     font-size: 20px;
 }
 
@@ -14,7 +14,7 @@
     z-index: 30;
     top: 0;
     width: 100%;
-    background: rgb(107, 26, 26);
+    background: #000;
     box-shadow: 0 0 4px 2px white;
 }
 
@@ -24,22 +24,30 @@
 }
 
 .container {
-    display: flex;
-    max-width: 1024px;
+    max-width: 1600px;
+    max-height: ;
     padding-right: 12px;
     padding-left: 12px;
     margin: 0 auto;
 }
 
-.align-s {
-    align-items: flex-start;
-}
-
 .lista {
-    margin: 2rem;
-    padding: initial;
+    margin: 20px;
+    padding: 1rem;
     list-style: none;
     font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-reservar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 198px;
+    height: 113px;
+    border-radius: 20px;
+    background: #660708;
 }
 
 .flexbox {
@@ -60,18 +68,18 @@
 }
 
 .g-8px {
-    gap: 50px;
+    gap: 80px;
 }
 
 
 .link {
-    color: inherit;
+    color: #d9d9d9;
     text-decoration: initial;
     font-weight: 700;
     transition: color 0.35s;
     
     &:hover {
-        color: #b1a7a6;
+        color: #6B1A1A;
     }
 }
 
@@ -97,6 +105,11 @@
 .main {
     font-size: 25px;
     margin: 10px;
+    background: var(--border-color);
+    aspect-ratio: 10/16;
+    width: 200px;
+    padding: 5px;
+    position: relative;
 }
 
 /* breve informacion de la comida y carne */
@@ -139,7 +152,7 @@
 }
 
 .div-titulo {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Josefin Slab', serif;
     width: 500px;
     height: 150px;
     display: grid;
@@ -147,32 +160,33 @@
 }
 
 .titulo {
-    font-size: 200px;
+    font-size: 30px;
     text-align: center;
     margin: auto;
     color: #ffffff;
 }
 
 .contenedor-img {
-    border: 100px;
-    display: grid;
-    grid-row: 1fr;
+    display: flex;
     place-items: center;
-    margin: 100px;
-    /* width: 100%; */
+    z-index: 70;
+    margin: 200px;
+    width: 700px;
 }
 
-.div-img {
-    width: 100vw;
-    z-index: 200;
+.carrusel {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    /* overflow:scroll; */
+    /* width: 100vw; */
     /* max-width: 2100px; */
     /* background: rgb(87, 90, 94); */
 }
 
-.list-imagenes {
-    margin: 20px;
-    display: inline-block;
-    border: 120px;
+.elementos {
+    flex: 1 0 auto;
+    margin: 0 50px;
+    width: 600px;
 }
 
 /* .img--cortes {
@@ -183,9 +197,9 @@
     max-width: 100%;
 } */
 
-.div-img:hover > div{
+/* .div-img:hover > div{
     color: rgb(61, 61, 72);
-}
+} */
 
 /* Medio de comunicación */
 .whatsapp{
@@ -197,5 +211,5 @@
 /* Footer */
 
 .pie_de_pagina {
-    color: rgb(244, 247, 245);
+    color: #08090A;
 }
