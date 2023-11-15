@@ -1,0 +1,151 @@
+.header {
+    /* padding: 5px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Josefin Slab', serif;
+}
+
+.nav{
+    top: 0;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background: #000;
+    width: 100%;
+}
+
+.contenedor {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-f{
+    margin: initial;
+    padding: 0;
+    list-style: none;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex{
+    display: flex;
+    gap: 8px;
+}
+
+.gap{
+    gap: 15px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 148px;
+    height: 90px;
+    background: #660708;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.lista{
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-decoration: initial;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+}
+
+.link{
+    text-decoration: initial;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+}
+
+.lista a{
+    color: rgb(244, 247, 245);
+    transition: color 0.35s;
+    text-decoration: none;
+    &:hover {
+        color: #BA181B;
+    }
+}
+
+.link i{
+    color: rgb(244, 247, 245);
+    text-decoration: none;
+    transition: color 0.35s;
+    &:hover {
+        color: #BA181B;
+    }
+
+}
+
+.responsive-ul{
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .r {
+        display: none;
+    }
+
+    .nav{
+        height: 90px;
+        width: 100%;
+        background-color: #000;
+    }
+
+    .responsive-ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        background: #660708;
+        height: 100%;
+        list-style: none;
+        top: 200px;
+        left: 0;
+    }
+    
+    .link-responsive
+    .lista-responsive{
+        width: 100%;
+        padding: 9px;
+    }   
+    .lista-responsive a{
+        text-decoration: none;
+        list-style: none;
+        color: rgb(244, 247, 245);
+    }
+    
+    .link-responsive i{
+        text-decoration: none;
+        color: rgb(244, 247, 245);
+    }
+    
+}
+.div_button-responsive i{
+    color: rgb(244, 247, 245);
+    font-size: 25px;
+    padding: 10px 10px;
+}
+
+.div_button-responsive{
+    float: left;
+}
+/* Fin de responsive (incompleto) */
