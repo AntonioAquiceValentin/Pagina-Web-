@@ -1,16 +1,24 @@
+#root{
+}
+
+html body{
+    margin: 0 auto;
+    background: #A6A9AA
+}
+
 .header {
-    /* padding: 5px; */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 80;
     font-family: 'Josefin Slab', serif;
 }
 
 .nav{
     top: 0;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background: #000;
     width: 100%;
 }
@@ -39,7 +47,7 @@
 
 .d-flex{
     display: flex;
-    gap: 8px;
+    gap: 18px;
 }
 
 .gap{
@@ -50,8 +58,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 148px;
-    height: 90px;
+    width: 140px;
+    height: 80px;
     background: #660708;
     border-radius: 10px;
     flex-shrink: 0;
@@ -70,7 +78,7 @@
 
 .link{
     text-decoration: initial;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 600;
     font-style: normal;
     line-height: normal;
@@ -100,7 +108,7 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .r {
         display: none;
     }
@@ -149,3 +157,82 @@
     float: left;
 }
 /* Fin de responsive (incompleto) */
+.main{
+    /* width: 100%; */
+    position: relative;
+}
+
+.container{
+    padding: 2rem;
+}
+
+.slider-wrapper{
+    top: 130px;
+    position: relative;
+    max-width: 75rem;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+  
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem /0.75rem hsla(0, 0%, 0%, 0.25);
+}
+  
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    opacity: .87;
+}
+  
+.slider-nav{
+    display: flex;
+    column-gap: 1.5rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+  
+.slider-nav a{
+    width: .78rem;
+    height: .78rem;
+    border-radius: 50%;
+    background: #fff;
+    opacity: .75;
+    transition: opacity ease 250ms;
+}
+  
+.slider-nav a:hover{
+    opacity: 1;
+}
+  
+.texto{
+    position: absolute;
+    top: 50%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), rgba(166, 169, 170, 50%);
+    border-radius: 8px;
+}
+
+.texto h1{
+    font-size: 40px;
+    padding-left: 15px;
+    color: #660708;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 800;
+}
+
+.texto p{
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+}
