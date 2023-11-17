@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Montserrat&family=Noto+Sans+Javanese&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Montserrat&family=Noto+Sans+Javanese&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,18 +21,31 @@
 
 <body class="body">
     <!--barra de busqueda-->
-    <header class="header">
+    <header class="header margin-c">
         <nav class="nav">
             <div class="container flexbox flexbox-centered">
-                <ul class="lista d-flex g-8px">
-                    <li>
-                        <a href="index.html">
-                            <div class="palco"><img src="img/Logo/logo-palco.png" alt="Palco"></div>
-                        </a>
-                    </li>
+                <ul class="d-flex g-30px">
+                    <li class="lista"><a href="index.html"><img src="img/Logo/logo-palco.png" alt="Palco"
+                                class="palco"></a></li>
                 </ul>
 
-                <ul class="lista d-flex g-8px">
+                <ul class="lista d-flex g-30px">
+                    <li class="li"><div class="boton-reservar"><a href="#" class="link">Reservar</a></div></li>
+                    <li class="li"><a href="#" class="link">Carta</a></li>
+                    <li class="li"><a href="#" class="link">Locales</a></li>
+                </ul>
+
+                <ul class="lista md:d-flex g-20px">
+                    <li class="li"><a href="#" class="link"><i class="bi bi-person-fill"></i></a></li>
+                    <li class="li"><a href="#" class="link"><i class="bi bi-cart"></i></a></li>
+                </ul>
+
+                <ul class="lista d-flex g-30px div-responsive-ul">
+                    <li><a href="index.html"><img src="img/Logo/logo-palco.png" alt="Palco" class="palco"></a></li>
+                </ul>
+
+                <ul class="lista d-flex g-30px div-responsive-ul">
+                    <div class="div-responsive-button"></div>
                     <li>
                         <div class="boton-reservar"><a href="#" class="link">Reservar</a></div>
                     </li>
@@ -40,15 +55,11 @@
                     <li>
                         <a href="#" class="link">Locales</a>
                     </li>
-                </ul>
 
-                <ul class="lista d-none g-8px md:d-flex">
-                    <li>
-                        <a href="#" class="link"><i class="bi bi-person-fill"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="link"><i class="bi bi-cart"></i></a>
-                    </li>
+                    <ul class="md:d-flex">
+                        <li class="lista"><a href="#" class="link"><i class="bi bi-person-fill"></i></a></li>
+                        <li class="lista"><a href="#" class="link"><i class="bi bi-cart"></i></a></li>
+                    </ul>
                 </ul>
             </div>
         </nav>
@@ -56,56 +67,58 @@
 
     <main>
         <!-- breve informacion de la comida y carne-->
-        <!-- <section class="section-information">
+        <section class="section-information">
             <div class="div-information display-information">
-                <h1>Maestros de la carne</h1>
-                <p class="text">Los mejores cortes de carne de carne estan aqui, con carne de res de la mejor calidad
-                    sumado de la mejor preparacion <br>
-                    Somos un Restaurant reconocido por nuestra sazón y atención.</p>
-                <img class="img--partes_de_res" src="./img/tipos-de-corte.jpg" alt="partes del res">
-            </div> -->
+                <div class="title-text">
+
+                    <!-- <h1 class="titulo d-ab">Maestros de la carne</h1>
+                    <p class="text a-">Los mejores cortes de carne de carne estan aqui, con carne de res de la mejor
+                        calidadsumado de la mejor preparacion. <br>
+                        Somos un Restaurant reconocido por nuestra sazón y atención </p> -->
+                    <img class="img--partes_de_res d-ab" src="./img/tipos-de-corte.jpg" alt="partes del res">
+                </div>
+            </div>
         </section>
 
-        <!--Cortes de carne de res-->
+        <!-- Cortes de carne de res-->
         <!-- <div class="contenedor-titulo">
             <div class="div-titulo">
                 <h2 class="titulo">Los mejores cortes</h2>
-            </div> -->
-        <nav class="contenedor-img">
+            </div>
+        <section class="contenedor-img">
             <div class="carrusel">
                 <div class="elementos">
-                    <a id="1" href="./img/cortes/corte new-york.webp"></a>
-                    <a id="2" href="./img/cortes/corte-picanha.jpg"></a>
-                    <a id="3" href="./img/cortes/corte-rib_eye.jpeg"></a>
-                    <a id="4" href="./img/cortes/corte-top_sirloin.jpg"></a>
-                    <a id="5" href="./img/cortes/corte_cowboy.webp"></a>
-                </div>
-                <div class="slider">
-                    <a href="#1"></a>
-                    <a href="#2"></a>
-                    <a href="#3"></a>
-                    <a href="#4"></a>
-                    <a href="#5"></a>
-                </div>
+                    <img id="1" src="./img/cortes/corte new-york.webp"></img>
+                    <img id="2" src="./img/cortes/corte-picanha.jpg"></img>
+                    <img id="3" src="./img/cortes/corte-rib_eye.jpeg"></img>
+                    <img id="4" src="./img/cortes/corte-top_sirloin.jpg"></img>
+                    <img id="5" src="./img/cortes/corte_cowboy.webp"></img>
+                </div> -->
+        <!-- <div class="slider">
+            <a href="#1"></a>
+            <a href="#2"></a>
+            <a href="#3"></a>
+            <a href="#4"></a>
+            <a href="#5"></a>
+        </div>
+        </section> -->
+        <!-- <article class="article">
+            <div class="whatsapp">
+                <a href="https://wa.me/+51933028937?text=Hola%20deseo%20ordenar." target="_blank"><i class="bi bi-whatsapsp"></i></a>
             </div>
-        </nav>
+        </article> -->
     </main>
-    <article class="article">
-        <nav class="whatsapp">
-            <a href="https://wa.me/+51933028937?text=Hola%20deseo%20ordenar." target="_blank"><i class="bi bi-whatsapp"></i></a>
-        </nav>
-    </article>
     <!-- Footer -->
-    <footer class="pie_de_pagina">
+    <!-- <footer class="footer">
         <section>
             <div>
-                <p class="footer">&copy; 2023 Acerca de nosotros</p>
+                <p class="Derechos-autor">&copy; 2023 Acerca de nosotros</p>
             </div>
             <div>
                 <input type="text">
             </div>
         </section>
-    </footer>
+    </footer> -->
 </body>
 
 </html>

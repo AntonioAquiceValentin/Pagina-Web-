@@ -1,6 +1,6 @@
 /*Barra de busqueda*/
 .body {
-    margin: initial;
+    margin: auto;
     font-family: 'Josefin Slab', serif;
     font-size: 20px;
     background: #CDD0D0;
@@ -8,34 +8,44 @@
 
 .header {
     box-shadow: 0 0 4px 2px white;
+    display: block;
 }
 
 .nav {
+    grid-template-rows: 33% 33% 33%;
     position: fixed;
+    z-index: 100;
     top: 0;
     width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     background: #000;
 }
 
 .container {
-    /* max-width: 100%; */
+    min-width: 740px; 
 }
 
 .lista {
-    margin: 20px;
-    padding: 1rem;
+    margin-right: 10px;
+    margin-left: 10px;
     list-style: none;
-    font-size: 40px;
-    /* justify-self: center; */
+    font-size: 25px;
     align-items: center;
+    align-content: center;
+}
+
+.li {
+    display: inline-block;
+    gap: 70px;
 }
 
 .palco {
     display: flex;
     align-items: start;
     justify-content: start;
+    width: 230px;
+    height: 87px;
 }
 
 .boton-reservar {
@@ -44,7 +54,8 @@
     justify-content: center;
     width: 198px;
     height: 113px;
-    border-radius: 20px;
+    flex-shrink: 0;
+    border-radius: 10px;
     background: #660708;
 }
 
@@ -57,23 +68,26 @@
     justify-content: space-around;
 }
 
-.d-none {
-    display: none;
-}
-
 .d-flex {
     display: flex;
 }
 
-.g-8px {
-    gap: 80px;
+.g-30px {
+    gap: 30px;
+}
+
+.g-20px {
+    gap: 20px;
 }
 
 
 .link {
     color: #d9d9d9;
     text-decoration: initial;
-    font-weight: 700;
+    font-size: 45px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
     transition: color 0.35s;
     
     &:hover {
@@ -83,9 +97,18 @@
 
 @media (width >=768px) {
     .md\:d-flex {
-        display: flex;
+        display: inline-block;
+    }
+    .d-flex {
+        display: inline-block;
     }
 }
+
+/* responsive */
+.div-responsive-ul {
+    display: none;
+}
+
 /* barra-de-busqueda */
 
 .bi{
@@ -94,45 +117,54 @@
 }
 
 .bi-person-fill,
-.bi-cart,
-.bi-whatsapp {
-    width: 100%;
+.bi-cart {
     color: rgb(244, 247, 245);
+    transition: color 0.35s;
+    &:hover {
+        color: #BA181B;
+    }
 }
 
 /* breve informacion de la comida y carne */
+
 .section-information {
     position: relative;
-    font-size: 45px;
-    margin: 10px;
+    top: 195px;
+    /* border: 2px solid black; */
+    padding-left: 200px;
+    padding-right: 200px;
+    min-width: 760px;
 }
 
 .div-information {
-    left: 120px;
-    width: 180vh;
-    height: 50vh;
+    /* border: 5px solid green; */
     background: rgb(61, 61, 72);
-    position: relative;
 }
 
-.display-information {
-    display: grid;
-    place-items: center;
-    width: 100%;
+.titulo {
+    justify-content: center;
+    text-align: center;
 }
+
+/* .d-ab {
+    position:;
+} */
 
 .text {
-    margin: 0 auto;
+    font-size: 12px;
     padding: 5px;
     text-align: justify;
 }
 
 .img--partes_de_res {
-    height: 200px;
-}
+    width: 100%;
+    top: 0;
+    /* opacity: 0.5;
+    object-fit: contain;
+} */
 
 /* Cortes de carne de res */
-.contenedor-titulo {
+/* .contenedor-titulo {
     margin: 0 auto;
     padding: 20px;
     height: 100px;  
@@ -155,58 +187,56 @@
 }
 
 .contenedor-img {
-    position: relative;
-    max-width: 30rem;
-    /* top: 0; */
-    /* right: 0; */
-    /* bottom: 0; */
-    /* left: 0; */
+    position: absolute;
+    padding: 2rem;
     margin: 0 auto;
     border: #000 2px;
-}
+} */
 
-.carrusel {
-    position: absolute;
+/* .carrusel {
+    position: relative;
+    max-width: 52rem;
+    margin: 0 auto;
+} */
+
+.elementos {
     display: flex;
     aspect-ratio: 16/9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-}
-
-.elementos {
+    border-radius: .8rem;
     flex: 1 0 auto;
     margin: 0 50px;
-    width: 600px;
 }
-
-/* .img--cortes {
-    width: 30vw;
-    margin: 10px;
-    border-radius: 20px;
-    box-shadow: 10px 10px 20px .5px #ffffff;
-    max-width: 100%;
-} */
 
 /* .div-img:hover > div{
     color: rgb(61, 61, 72);
 } */
 
 /* Medio de comunicación */
-.article {
-    display: flex;
+/* .article {
+    position: absolute;
+} */
 
+/* .whatsapp{
+    color: #1B4D2D;
+    text-decoration: initial;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
 }
 
-.whatsapp{
-    display: flex;
-    padding-left: 100%;
-    padding-top: 100%;
-}
-
+.bi-whatsapp{
+    font-size: 45px;
+} */
 /* Footer */
 
-.pie_de_pagina {
+/* .footer {
+    position: relative;
+    display: flex;
+    align-items: end;
+    bottom: 0px;
     color: #08090A;
-}
+} */
