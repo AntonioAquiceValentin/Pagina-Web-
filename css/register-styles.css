@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -63,4 +64,25 @@ form button {
     padding: 10px 15px;
     cursor: pointer;
     font-size: 30px;
+=======
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container-master{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-inicio{
+}
+
+.div-user{
+    border-radius: 20px;
+    border: 2px solid orange;
+    padding: 40px;
+>>>>>>> 6e277042d850b1f417c1d13b27d5c9aaba3caaad
 }
