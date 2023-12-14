@@ -1,7 +1,7 @@
 export const socialMedia = [
   {
     id: 1,
-    href: '#',
+    href: '../register/user.html',
     title: 'Ingresar usuario',
     content: '<i class="bi bi-person-fill"></i>'
     },
@@ -12,4 +12,3 @@ export const socialMedia = [
     content: '<i class="bi bi-cart"></i>'
     }
 ];
-  
