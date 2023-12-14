@@ -1,7 +1,7 @@
 const socialMedia = [
     {
     id: 1,
-    href: '#',
+    href: 'register/index.html',
     title: 'Ingresar usuario',
     content: '<i class="bi bi-person-fill"></i>'
     },
